@@ -1,13 +1,15 @@
 package tamilnadu.erode;
 
 public interface Actor {
-	boolean makeUpRequired = true;
+
+	boolean makeupRequired = true;
 	String address = "chennai";
 
-	public void act();
+	public abstract void act();
 
-	public void dance();
+	public abstract void dance();
 
-	public void sing();
+	public abstract void sing();
 
 }
+

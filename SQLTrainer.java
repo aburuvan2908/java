@@ -1,21 +1,20 @@
 package tamilnadu.erode;
+
 public class SQLTrainer extends Trainer {
-	public SQLTrainer(String dept)
-	{
-		super("CSE","payilagam");
-		this.dept=dept;
-		this.institute=institute;
-		
+
+	public SQLTrainer() {
+		super("CSE", "payilagam");
+//		 System.out.println("no-arg sub class constructor");
 	}
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SQLTrainer ram = new SQLTrainer();
+		ram.training();
+		System.out.println(ram.getSalary());
+		System.out.println(ram.dept);
+		System.out.println(ram.institute);
 
+	}
 
-	SQLTrainer ram = new SQLTrainer("SQL");
-	System.out.println("course name is="+ram.dept);
-	System.out.println("institute name is ="+ram.institute);
-	ram.training();
-	ram.getsalary();
-	System.out.println(ram.getsalary());
-}
 }
